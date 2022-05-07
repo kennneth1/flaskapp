@@ -1,10 +1,10 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/home')
+@app.route('/')
 def home_page():
     return "rendered on browser"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
